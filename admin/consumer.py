@@ -2,9 +2,9 @@
 
 import pika
 
-params = pika.URLParametrers("amqps://frulvnjr:Zko0AytOU8R4ZXBAgCXL55pmkuu5QivT@moose.rmq.cloudamqp.com/frulvnjr")
+params = pika.URLParameters("amqps://frulvnjr:Zko0AytOU8R4ZXBAgCXL55pmkuu5QivT@moose.rmq.cloudamqp.com/frulvnjr")
 
-connection = pika.BlockingCOnnection(params)
+connection = pika.BlockingConnection(params)
 
 channel = connection.channel()
 channel.queue_declare(queue='admin')
@@ -16,8 +16,7 @@ def callback(ch, method, properties, body):
     print(body)
 
 
-channel.basic_consume(queue= '', on_message_callback=callback())
+channel.basic_consume(queue='admin', on_message_callback=callback)
 print("Started Consuming")
 channel.start_consuming()
 channel.close()
-
