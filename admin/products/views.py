@@ -9,14 +9,12 @@ from .serializers import ProductSerializer
 import random
 
 
-
 # Create your views here.
 
 class ProductViewSet(viewsets.ViewSet):
     def list(self, request):  # /api/products
         products = Product.objects.all()
         serializer = ProductSerializer(products, many=True)
-        publish()
 
         return Response(serializer.data)
 
@@ -24,6 +22,7 @@ class ProductViewSet(viewsets.ViewSet):
         serializer = ProductSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
+        publish('Product Created', serializer.data)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
     def retrieve(self, request, pk=None):  # /api/products/<str:id>
@@ -36,11 +35,14 @@ class ProductViewSet(viewsets.ViewSet):
         serializer = ProductSerializer(instance=product, data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
+        # publish('Product updated', serializer.data)
+        publish('Product Updated', serializer.data)
         return Response(serializer.data, status=status.HTTP_202_ACCEPTED)
 
     def destroy(self, request, pk=None):  # /api/products/<str:id>
         product = Product.objects.get(id=pk)
         product.delete()
+        publish('Product Deleted', pk)
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
@@ -50,7 +52,5 @@ class UserAPIView(APIView):
         user = random.choice(users)
 
         return Response({
-            "id":user.id
+            "id": user.id
         })
-
-

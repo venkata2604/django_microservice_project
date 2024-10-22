@@ -5,17 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba7a18a9-7a8c-4021-a228-274b343dc8a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dbdata/admin/products_product.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/admin/products_product.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/ib_buffer_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dbdata/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dbdata/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dbdata/mysql/innodb_index_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/mysql/innodb_index_stats.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dbdata/mysql/innodb_table_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/.dbdata/mysql/innodb_table_stats.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/consumer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/producer.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/producer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../main/.dbdata/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/../main/.dbdata/ib_buffer_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../main/.dbdata/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/../main/.dbdata/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../main/.dbdata/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/../main/.dbdata/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../main/.dbdata/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/../main/.dbdata/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../main/.dbdata/ibtmp1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../main/.dbdata/main/product.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../main/.dbdata/main/product.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../main/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../main/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../main/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../main/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../main/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../main/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +99,12 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -109,7 +125,8 @@
       <workItem from="1729311780916" duration="4541000" />
       <workItem from="1729320283587" duration="14546000" />
       <workItem from="1729391631730" duration="10153000" />
-      <workItem from="1729474645679" duration="2879000" />
+      <workItem from="1729474645679" duration="14439000" />
+      <workItem from="1729546414345" duration="664000" />
     </task>
     <servers />
   </component>

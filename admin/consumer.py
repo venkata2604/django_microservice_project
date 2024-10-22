@@ -12,7 +12,7 @@ channel.queue_declare(queue='admin')
 
 # publish
 def callback(ch, method, properties, body):
-    print("received in admin")
+    print("Received in admin")
     print(body)
 
 
